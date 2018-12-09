@@ -5,7 +5,7 @@
 #
 # docker build -t dukenukem3d .
 # xhost +
-# docker run -i --rm --net=host --privileged=true -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v /run/user/1000/pulse:/run/user/1000/pulse -v /home/paul:/home/paul dukenukem3d
+# docker run -i --rm --net=host --ipc=host --privileged=true -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v /run/user/1000/pulse:/run/user/1000/pulse -v /home/paul:/home/paul dukenukem3d
 
 FROM m0elnx/ubuntu-32bit
 
